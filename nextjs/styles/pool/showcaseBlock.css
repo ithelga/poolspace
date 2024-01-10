@@ -1,0 +1,22 @@
+.titleParam {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: initial;
+    margin-bottom: 10px;
+}
+
+.container {
+    background-color: #2A2A2A;
+    border-radius: 20px;
+    padding: 15px 15px;
+}
+
+
+.squareContainer {
+    margin-top: 10px;
+    display: flex;
+    height: 100%;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: left; /* Добавленный стиль */
+}

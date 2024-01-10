@@ -1,0 +1,123 @@
+.radioButton {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.radioButton input[type="radio"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    outline: none;
+    position: relative;
+    background-color: #292929;
+}
+
+.radioButton input[type="radio"]:checked::after {
+    content: '';
+    display: block;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: #FF3131;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.radioButton label {
+    margin-left: 20px;
+    font-size: 12px;
+    color: #D8D8D8;
+}
+
+
+.filterContainer {
+    background: #222222;
+    border-radius: 15px;
+    padding: 15px 15px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.filterContainer:last-child {
+    margin-bottom: 0;
+}
+
+.titleContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.titleParam {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: inherit;
+    /*margin-bottom: 15px;*/
+}
+
+.icon {
+    color: #FFFFFF;
+}
+
+.icon img {
+    width: 15px; /* Укажите желаемую ширину иконки */
+    height: 8px; /* Укажите желаемую высоту иконки */
+    transform: rotate(0deg); /* Начальный поворот */
+    transition: transform 0.3s ease-in-out; /* Анимация поворота */
+    user-select: none; /* Предотвращение выделения при клике */
+}
+
+.titleContainer.open .icon img {
+    transform: rotate(180deg); /* Поворот при открытии */
+}
+
+.content {
+    display: block;
+    transition: max-height 0.3s ease-in-out;
+    overflow: hidden;
+    max-height: 500px; /* Высота контейнера, который можно скрывать/раскрывать */
+}
+
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.checkbox input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #292929;
+    outline: none;
+    position: relative;
+    border-radius: 5px;
+    background-color: #292929;
+}
+
+.checkbox input[type="checkbox"]:checked::after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 4px;
+    border: 3px solid #FF3131;
+    border-top: none;
+    border-right: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+
+.checkbox label {
+    margin-left: 20px;
+    font-size: 12px;
+    color: #D8D8D8;
+}

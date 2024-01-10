@@ -1,0 +1,154 @@
+/* styles/blocks.module.css */
+
+.container {
+    display: flex;
+    width: 100%;
+    gap: 15px;
+    padding: 10px 30px;
+    box-sizing: border-box;
+}
+
+.componentA {
+    width: 80%;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 600px;
+
+}
+.componentB {
+    width: 20%;
+    height: 600px;
+    background-color: #2A2A2A;
+    padding: 0 10px 0 20px;
+    border-radius: 20px;
+    overflow-y: auto;
+    -ms-overflow-style : none; /* IE10+ */
+    border-top: 20px solid #2A2A2A;
+    border-bottom: 15px solid #2A2A2A;
+}
+
+.componentB::-webkit-scrollbar {
+    width : 0 !important
+}
+.component2 {
+    display: flex;
+    height: 84%;
+    gap: 15px;
+    box-sizing: border-box;
+}
+
+.component3 {
+    height: 84%;
+    border-radius: 20px;
+    gap: 15px;
+    box-sizing: border-box;
+    background-color: #2A2A2A;
+}
+
+.componentA1 {
+    background-color: #2A2A2A;
+    width: 15%;
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.componentA2 {
+    display: flex;
+    width: 85%;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.componentDiagram {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contDiagram {
+    background-color: #2A2A2A;
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    width: calc(33.33% - 10px);
+}
+
+
+.diagramGroup {
+    flex: 1 0 calc(33.33% - 10px);
+}
+
+.titleParam {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: revert;
+    margin-bottom: 20px;
+}
+
+.titleA {
+    padding: 10px;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+
+.squareContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 0;
+}
+
+.square {
+    width: 125px;
+    height: 95px;
+    background-color: rgba(52, 52, 52, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.bigNumber {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ff3131;
+}
+
+.bigNumber2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff3131;
+}
+
+.smallText {
+    font-size: 12px;
+    margin-top: 2px;
+    color: #5F5F5F;
+}
+
+.titleFilter {
+    display: flex;
+    align-items: center;
+    color: #E1E4E9;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: revert;
+}
+
+.titleFilter::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #FF3131;
+    margin-right: 20px;
+}
+

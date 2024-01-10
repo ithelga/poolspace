@@ -1,0 +1,74 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 550px;
+    justify-content: center;
+    background-color: #2A2A2A;
+    border-radius: 30px;
+    margin: 30px 100px;
+
+}
+
+.centerTitle {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #D8D8D8;
+    font-weight: revert;
+
+}
+
+.centerText {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 22px;
+    color: #5D6065;
+    font-weight: revert;
+}
+
+.squaresContainer {
+    display: flex;
+
+}
+
+.square {
+    background: #353535;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.squareDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.square:hover {
+    filter: brightness(110%);
+}
+
+.image {
+    width: 100px;
+    height: 100px;
+    align-self: center;
+    /*object-fit: cover;*/
+    margin-bottom: 20px;
+}
+
+.square p {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: normal;
+    color: #D8D8D8;
+}

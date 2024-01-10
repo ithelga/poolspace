@@ -1,0 +1,60 @@
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.flexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Изменение распределения на левый край */
+}
+
+.square {
+    width: 350px;
+    height: 250px;
+    background-color: #353535;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: filter 0.3s ease-in-out;
+    border-radius: 30px;
+}
+
+.square:hover {
+    filter: brightness(120%);
+}
+
+.icon {
+    width: 90px;
+    height: 90px;
+}
+
+.fondInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 14px;
+    margin-left: 5px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.smallIcon {
+    width: 15px; /* Измените размер иконки по вашему желанию */
+    height: 15px; /* Измените размер иконки по вашему желанию */
+    margin: 0 10px; /* Пространство между иконками */
+}
+
+.fondTitle {
+    margin-top: 20px;
+    text-align: center;
+    color: #7D51FB;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+

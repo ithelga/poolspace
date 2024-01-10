@@ -1,0 +1,46 @@
+.buttonGroup {
+    display: flex;
+    gap: 10px; /* Расстояние между кнопками */
+    margin-bottom: 10px;
+}
+
+.button {
+    position: relative;
+    background-color: transparent;
+    color: #5d6065;
+    border: none;
+    padding: 10px 10px;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s;
+    font-size: 14px;
+}
+.button:first-child {
+    padding-left: 20px; /* Убираем паддинг слева у первой кнопки */
+}
+
+.button::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 35%;
+    height: 3px;
+    background-color: transparent;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.clicked::after {
+    background-color: #ff3131;
+}
+
+.button:hover {
+    color: #e1e4e9;
+    background-color: transparent;
+}
+
+.clicked {
+    color: #e1e4e9;
+    background-color: transparent;
+}

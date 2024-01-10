@@ -1,0 +1,85 @@
+/* piflist.module.css */
+
+.container {
+    padding: 12px 30px 0 30px;
+    width: 100%;
+}
+
+.container2 {
+    /*width: 100%;*/
+    /*padding-right: 30px;*/
+    /*padding-left: 30px;*/
+    /*margin-top: 12px;*/
+    box-sizing: border-box;
+    overflow: auto; /* Скрыть скролл-бар */
+    -ms-overflow-style : none; /* IE10+ */
+    max-height: 600px; /* Высота контейнера таблицы */
+    border-radius: 20px;
+    /*border: 2px solid #2A2A2A;*/
+}
+
+
+.container2::-webkit-scrollbar {
+    width : 0 !important /* Webkit */
+}
+
+.table {
+    /*padding: 20px 30px;*/
+    border-collapse: collapse;
+    /*border-radius: 20px;*/
+    /*overflow: hidden;*/
+    font-size: 14px;
+    background: rgb(var(--background-end-rgb));
+}
+
+.table th {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    user-select: none;
+    padding: 12px;
+    text-align: left;
+    cursor: pointer;
+    background: #2A2A2A;
+    font-weight: bold;
+    color: #E1E4E9;
+    transition: background-color 0.3s; /* Добавленный переход */
+    white-space: nowrap;
+}
+
+/* Стиль для подчеркивания */
+.table th.underline {
+    text-decoration: underline;
+    text-decoration-thickness: 2px; /* Толщина подчеркивания */
+    text-underline-offset: 2px; /* Отступ подчеркивания от текста */
+    color: #FF3131; /* Цвет текста при наведении */
+    cursor: pointer; /* Изменение формы указателя при наведении */
+}
+
+.table th:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px; /* Толщина подчеркивания */
+    text-underline-offset: 2px; /* Отступ подчеркивания от текста */
+    color: #FF3131; /* Цвет текста при наведении */
+    cursor: pointer; /* Изменение формы указателя при наведении */
+}
+
+.table tr {
+    transition: background-color 0.3s;
+}
+
+.table tbody tr:hover {
+    background-color: rgba(255, 49, 49, 0.35);
+}
+
+.table td {
+    padding: 10px;
+    border-bottom: 1px solid #222222;
+    white-space: nowrap;
+}
+
+.table td:nth-child(1) {
+    width: 100%;
+    white-space: normal;
+}
+
